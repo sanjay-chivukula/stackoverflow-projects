@@ -64,7 +64,7 @@ def find_thresholds(values: list, labels: list, case2_label: any) -> list:
         if prev_label == case2_label or curr_label != prev_label:
             threshold = (prev_value + curr_value) / 2
             thresholds.append(threshold)
-            
+
         # Update states.
         prev_value, prev_label = curr_value, curr_label
 
